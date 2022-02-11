@@ -1,0 +1,252 @@
+@media (max-width: 1300px) {
+  .info-card {
+    padding: 20px 20px;
+    max-width: none;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    top: 10px;
+    right: auto;
+    left: auto;
+
+    &__price {
+      margin: 20px 0;
+    }
+  }
+  .main-nav {
+    width: 100%;
+    justify-content: space-between;
+    &__item {
+      margin-right: 15px;
+      width: min-content;
+      &::after {
+        content: none;
+      }
+    }
+  }
+  .social-nav {
+    &__item {
+      &:not(:first-child) {
+        margin-left: 22px;
+      }
+    }
+  }
+  .search {
+    &__start {
+      width: 25px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .requisites {
+    grid-template-rows: 1fr;
+    grid-row-gap: 20px;
+  }
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+      padding-top: 35px;
+      padding-bottom: 45px;
+      grid-row-gap: 40px;
+    }
+  }
+  .gallery {
+    &__item {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      
+      &:not(&--first) {
+        margin-top: 50px;
+        padding: 0;
+      }
+    }
+  }
+  .main {
+    &__gallery-container {
+      grid-template-columns: 1fr;
+    }
+    &__price-block {
+      margin-left: 0;
+      max-width: 100%;
+      min-width: 0;
+      overflow: visible;
+      position: static;
+      max-height: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .container--large {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .advantages {
+    max-width: 500px;
+    justify-self: center;
+  }
+  .header {
+    &__logo {
+      margin: 0;
+      width: min-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__advantages {
+      margin: 0;
+      padding: 24px 0;
+    }
+    &__mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    &__burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__desktop {
+      display: none;
+    }
+    &__second-line {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 24px 16px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.10);
+    }
+  }
+  .search {
+    order: 3;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .price-block {
+    &__include-content {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__hammer,
+    &__box {
+      left: 18px;
+    }
+    &__type-name,
+    &__type-price {
+      margin-top: 14px;
+    }
+  }
+  .main-nav--footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 16px;
+  }
+  .spoiler {
+    &__inside-content {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  .product-spoiler {
+    &__inside-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 0;
+    }
+    &__price-block {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  .categories-nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &__column {
+      margin-bottom: 30px;
+      flex-basis: 50%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .price-block {
+    &__first-line,
+    &__bottom-functions,
+    &__price-inner {
+      grid-template-columns: 1fr;
+      grid-row-gap: 16px;
+    }
+    &__inner {
+      padding-right: 10px;
+    }
+    &__buy-button {
+      grid-column: auto;
+      order: 1;
+    }
+  }
+  .header {
+    &__second-line {
+      grid-row-gap: 20px;
+    }
+    &__logo {
+      margin: 0;
+    }
+    &__advantages {
+      display: none;
+    }
+  }
+  .logo {
+    &__img {
+      width: 200px;
+    }
+  }
+  .requisites {
+    text-align: left;
+    &__company-name {
+      width: 200px;
+    }
+    &__phone {
+      font-size: 25px;
+    }
+  }
+  .main-nav--footer {
+    grid-template-columns: 1fr;
+  }
+  .spoiler {
+    $block: &;
+    
+    &__toggle-input:checked ~ &__inside-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    } 
+
+    &__outer-content {
+      padding: 20px;
+    }
+  }
+  .categories-nav {
+    &__column {
+      flex-basis: 100%;
+    }
+  }
+  .footer {
+    &__about {
+      margin-top: 20px;
+    }
+  }
+  .main {
+    &__title {
+      font-size: 35px;
+      line-height: 45px;
+    }
+    &__prices {
+      margin-top: 111px;
+    }
+  }
+}
+

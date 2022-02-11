@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolshik</title>
+</head>
+<body>
+  
+  <header class="header">
+    <!-- MOBILE -->
+    <a href="#" class="header__burger" data-mobile-burger>
+      <div class="header__burger-line header__burger-line--first"></div>
+      <div class="header__burger-line header__burger-line--second"></div>
+      <div class="header__burger-line header__burger-line--third"></div>
+    </a>
+    <nav class="header__mobile" data-mobile-header>
+      <ul class="main-nav header__main-nav">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Недвижимость</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Всё&nbsp;для дома</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Услуги&nbsp;и специалисты</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Ипотека&nbsp;и кредит</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Застройщики</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link main-nav__link--select">О&nbsp;проекте</a>
+        </li>
+      </ul>
+        <ul class="social-nav">
+          <li class="social-nav__item">
+            <a href="tel:#" class="social-nav__link social-nav__link--phone">8 800 147 56 38</a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link">
+              <img src="imgs/header/arrows.svg" class="main-nav__icon" alt="#">
+              <span class="social-nav__counter">4</span>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link">
+              <img src="imgs/header/cart.svg" class="main-nav__icon" alt="Корзина">
+              <span class="social-nav__counter">99</span>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link">
+              <img src="imgs/header/star.svg" class="main-nav__icon" alt="Избранное">
+              <span class="social-nav__counter">17</span>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link">
+              <img src="imgs/header/user.svg" class="main-nav__icon" alt="Профиль">
+              <span class="social-nav__counter">!</span>
+            </a>
+          </li>
+        </ul>
+        <div class="secondary-nav">
+          <a href="#" class="secondary-nav__item">
+            <img src="imgs/header/Товары.svg" alt="Товары" class="secondary-nav__icon">
+            <span class="secondary-nav__item-name">Товары</span>
+          </a>
+          <a href="#" class="secondary-nav__item">
+            <img src="imgs/header/Комнаты.svg" alt="Комнаты" class="secondary-nav__icon">
+            <span class="secondary-nav__item-name">Комнаты</span>
+          </a>
+          <a href="#" class="secondary-nav__item">
+            <img src="imgs/header/ДизайнКвартиры.svg" alt="Дизайн квартиры" class="secondary-nav__icon">
+            <span class="secondary-nav__item-name">Дизайн квартиры</span>
+          </a>
+          <a href="#" class="secondary-nav__item">
+            <img src="imgs/header/Услуги.svg" alt="Услуги" class="secondary-nav__icon">
+            <span class="secondary-nav__item-name">Услуги</span>
+          </a>
+          <a href="#" class="secondary-nav__item">
+            <img src="imgs/header/Кредит.svg" alt="Кредит" class="secondary-nav__icon">
+            <span class="secondary-nav__item-name">Кредит</span>
+          </a>
+          <a href="#" class="secondary-nav__item">
+            <img src="imgs/header/Акции.svg" alt="Акции" class="secondary-nav__icon">
+            <span class="secondary-nav__item-name">Акции</span>
+          </a>
+        </div>
+    </nav>
+    <!-- MOBILE -->
+    <div class="header__desktop">
+      <nav class="header__first-line">
+        <ul class="main-nav header__main-nav">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Недвижимость</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Всё&nbsp;для дома</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Услуги&nbsp;и специалисты</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Ипотека&nbsp;и кредит</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Застройщики</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--select">О&nbsp;проекте</a>
+          </li>
+        </ul>
+  
+        <ul class="social-nav">
+          <li class="social-nav__item">
+            <a href="tel:#" class="social-nav__link social-nav__link--phone">8 800 147 56 38</a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link">
+              <img src="imgs/header/arrows.svg" class="main-nav__icon" alt="#">
+              <span class="social-nav__counter">4</span>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link">
+              <img src="imgs/header/cart.svg" class="main-nav__icon" alt="Корзина">
+              <span class="social-nav__counter">99</span>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link">
+              <img src="imgs/header/star.svg" class="main-nav__icon" alt="Избранное">
+              <span class="social-nav__counter">17</span>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a href="#" class="social-nav__link">
+              <img src="imgs/header/user.svg" class="main-nav__icon" alt="Профиль">
+              <span class="social-nav__counter">!</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__second-line">
+      <a href="/" class="logo header__logo">
+        <img src="imgs/header/headerLogo.svg" alt="Дольщик Онлайн лого" class="logo__img">
+      </a>
+      <div class="search header__search">
+        <img src="imgs/header/loupe.svg" alt="" class="search__icon">
+        <input type="text" placeholder="Ищете что-то конкретное?" class="search__input">
+        <button class="search__start"></button>
+      </div>
+      <div class="advantages header__advantages">
+        <div class="advantages__item advantages__item--first">
+          <span class="advantages__title advantages__title--first">МАРКЕТПЛЕЙС</span>
+          <span class="advantages__subtitle">Более 40 000 товаров</span>
+        </div>
+        <div class="advantages__item advantages__item--second">
+          <span class="advantages__title advantages__title--second">ТРЕЙД ИН</span>
+          <span class="advantages__subtitle">Быстрая оценка</span>
+        </div>
+        <div class="advantages__item advantages__item--third">
+          <span class="advantages__title advantages__title--third">КЭШБЭК</span>
+          <span class="advantages__subtitle">С покупки квартиры</span>
+        </div>
+      </div>
+    </div>
+    <div class="header__desktop">
+      <nav class="secondary-nav">
+        <a href="#" class="secondary-nav__item">
+          <img src="imgs/header/Товары.svg" alt="Товары" class="secondary-nav__icon">
+          <span class="secondary-nav__item-name">Товары</span>
+        </a>
+        <a href="#" class="secondary-nav__item">
+          <img src="imgs/header/Комнаты.svg" alt="Комнаты" class="secondary-nav__icon">
+          <span class="secondary-nav__item-name">Комнаты</span>
+        </a>
+        <a href="#" class="secondary-nav__item">
+          <img src="imgs/header/ДизайнКвартиры.svg" alt="Дизайн квартиры" class="secondary-nav__icon">
+          <span class="secondary-nav__item-name">Дизайн квартиры</span>
+        </a>
+        <a href="#" class="secondary-nav__item">
+          <img src="imgs/header/Услуги.svg" alt="Услуги" class="secondary-nav__icon">
+          <span class="secondary-nav__item-name">Услуги</span>
+        </a>
+        <a href="#" class="secondary-nav__item">
+          <img src="imgs/header/Кредит.svg" alt="Кредит" class="secondary-nav__icon">
+          <span class="secondary-nav__item-name">Кредит</span>
+        </a>
+        <a href="#" class="secondary-nav__item">
+          <img src="imgs/header/Акции.svg" alt="Акции" class="secondary-nav__icon">
+          <span class="secondary-nav__item-name">Акции</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container container--large main__container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Дольщик.онлайн</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Готовый дизайн</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">3-х комнатные, 183 кв.м</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link breadcrumbs__link--select">Минимализм</a>
+        </li>
+      </ul>
+      <h1 class="main__title">Дизайн-проект «Минимализм»</h1>
+      <div class="container container--small">
+        <div class="main__gallery-container">
+          <div class="gallery main__gallery">
+            <div class="gallery__buttons-row">
+              <a class="gallery__anchor-link" href="#generalView">общий вид</a>
+              <a class="gallery__anchor-link" href="#lounge">гостиная</a>
+              <a class="gallery__anchor-link" href="#bedroom">спальня</a>
+              <a class="gallery__anchor-link" href="#childRoom">детская</a>
+            </div>
+            <div class="slider gallery__item gallery__item--first">
+              <a class="gallery__anchor" id="generalView"></a>
+              <img src="imgs/main/sliderBigImage.png" class="slider__big-image">
+              <div class="slider__row">
+                <button class="slider__button-miniature">
+                  <img class="slider__miniature" src="imgs/main/sliderMiniature1.png" alt="">
+                </button>
+                <button class="slider__button-miniature">
+                  <img class="slider__miniature" src="imgs/main/sliderMiniature2.png" alt="">
+                </button>
+                <button class="slider__button-miniature">
+                  <img class="slider__miniature" src="imgs/main/sliderMiniature3.png" alt="">
+                </button>
+                <button class="slider__button-miniature">
+                  <img class="slider__miniature" src="imgs/main/sliderMiniature4.png" alt="">
+                </button>
+                <button class="slider__button-miniature">
+                  <img class="slider__miniature" src="imgs/main/sliderMiniature5.png" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__anchor" id="lounge"></a>
+              <div class="info-card main__info-card info-card--right">
+                <h2 class="info-card__title">Гостиная 32 м²</h2>
+                <dl>
+                  <dt class="info-card__key">Дизайн проект: </dt>
+                  <dd class="info-card__value">13 440 руб.</dd>
+                  <dt class="info-card__key">Товаров: </dt>
+                  <dd class="info-card__value">788 560 руб. (17 шт)</dd>
+                  <dt class="info-card__key">Услуг: </dt>
+                  <dd class="info-card__value">380 000 руб. (4 шт)</dd>
+                </dl>
+                <div class="info-card__price">1 200 560 руб.</div>
+                <a class="info-card__button" href="#">перейти в эту комнату</a>
+              </div>
+              <img class="gallery__img" src="imgs/main/galleryElement1.png" alt="Гостиная 32 м²">
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__anchor" id="childRoom"></a>
+              <div class="info-card main__info-card info-card--left">
+                <h2 class="info-card__title">Детская 12 м²</h2>
+                <dl>
+                  <dt class="info-card__key">Дизайн-проект: </dt>
+                  <dd class="info-card__value">5 040 руб.</dd>
+                  <dt class="info-card__key">Товаров: </dt>
+                  <dd class="info-card__value">688 000 руб. (29шт)</dd>
+                  <dt class="info-card__key">Услуг: </dt>
+                  <dd class="info-card__value">200 000 руб. (10шт)</dd>
+                </dl>
+                <div class="info-card__price">900 000 руб.</div>
+                <a class="info-card__button" href="#">перейти в эту комнату</a>
+              </div>
+              <img class="gallery__img" src="imgs/main/galleryElement2.png" alt="Детская 12 м²">
+            </div>
+            <div class="gallery__item">
+              <a class="gallery__anchor" id="bedroom"></a>
+              <div class="info-card main__info-card info-card--right">
+                <h2 class="info-card__title">Спальня 20 м²</h2>
+                <dl>
+                  <dt class="info-card__key">Дизайн-проект: </dt>
+                  <dd class="info-card__value">8 400 руб.</dd>
+                  <dt class="info-card__key">Товаров: </dt>
+                  <dd class="info-card__value">576 200 руб. (22шт)</dd>
+                  <dt class="info-card__key">Услуг: </dt>
+                  <dd class="info-card__value">657 800 руб. (14шт)</dd>
+                </dl>
+                <div class="info-card__price">1 254 000 руб.</div>
+                <a class="info-card__button" href="#">перейти в эту комнату</a>
+              </div>
+              <img class="gallery__img" src="imgs/main/galleryElement3.png" alt="Спальня 20 м²">
+            </div>
+          </div>
+          <div class="price-block main__price-block">
+            <div class="price-block__inner">
+              <div class="price-block__top">
+                <div class="price-block__first-line">
+                  <div>
+                    <span class="price-block__key">Дизайнер:&nbsp;</span>
+                  <a href="#" class="price-block__value">Студия дизайн PERFECTUM</a>
+                  </div>
+                  <button class="price-block__favourite">Добавить в избранное</button>
+                </div>
+                <div class="price-block__title">Дизайн-проект <br> «Минимализм»</div>
+                <ul>
+                  <li class="price-block__row">
+                    <span class="price-block__key">Жилой комплекс: </span>
+                    <a class="price-block__value" href="#">Видный</a>
+                  </li>
+                  <li class="price-block__row">
+                    <span class="price-block__key">Общая площадь: </span>
+                    <span class="price-block__value">138 м²</span>
+                  </li>
+                  <li class="price-block__row">
+                    <span class="price-block__key">Планировка: </span>
+                    <a class="price-block__value" href="#">3-к квартира в ЖК «Видный» 1Г</a>
+                  </li>
+                  <li class="price-block__row">
+                    <span class="price-block__key">Комнат: </span>
+                    <a class="price-block__value" href="#">3</a>
+                  </li>
+                </div>
+                </ul>
+              <div class="price-block__include">
+                <div class="price-block__include-inner">
+                  <div class="price-block__include-title">В проект входит:</div>
+                <div class="price-block__include-content">
+                  <span class="price-block__type-name">Гостиная</span>
+                  <span class="price-block__type-price">1 254 000 руб.</span>
+                  <span class="price-block__box">17</span>
+                  <span class="price-block__hammer">4</span>
+                  <span class="price-block__type-name">Спальня</span>
+                  <span class="price-block__type-price">640 980 руб.</span>
+                  <span class="price-block__box">29</span>
+                  <span class="price-block__hammer">10</span>
+                  <span class="price-block__type-name">Детская</span>
+                  <span class="price-block__type-price">900 000 руб.</span>
+                  <span class="price-block__box">22</span>
+                  <span class="price-block__hammer">14</span>
+                </div>
+                </div>
+              </div>
+              <div class="price-block__price">
+                <div class="price-block__price-inner">
+                  <span class="price-block__full-price">6&nbsp;408 749&nbsp;₽</span>
+                  <span class="price-block__sub-price">46 440 ₽ за м²</span>
+                  <button class="price-block__buy-button">Купить <br> этот дизайн</button>
+                </div>
+              </div>
+                <div class="price-block__bottom">
+                  <div class="price-block__bottom-inner">
+                    <div class="price-block__key price-block__key--bottom">Нужно больше индивидуальности?</div>
+                    <a href="#" class="price-block__value">Закажите индивидуальный дизайн!</a>
+                    <div class="price-block__bottom-functions">
+                      <button class="price-block__function price-block__function--copy">Копировать ссылку</button>
+                      <button class="price-block__function price-block__function--print">Печать</button>
+                      <button class="price-block__function price-block__function--share">Поделиться</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="main__prices">
+          <div class="spoiler">
+            <input class="spoiler__toggle-input" type="checkbox" id="spoiler1">
+            <div class="spoiler__outer-content">
+              <label class="spoiler__toggle-label" aria-hidden="true" for="spoiler1"></label>
+              <span class="spoiler__name">Стоимость дизайна (всей квартиры)</span>
+              <span class="spoiler__value">30 618 руб. (420 руб./м²)</span>
+            </div>
+            <ul class="spoiler__inside-content">
+              <li class="spoiler__row">
+                <span class="spoiler__inside-name">Дизайн-проект — Гостиная 32 м²</span>
+                <span class="spoiler__inside-value">13 440 руб. (420 руб./м²)</span>
+              </li>
+              <li class="spoiler__row">
+                <span class="spoiler__inside-name">Дизайн-проект — Детская 12 м²</span>
+                <span class="spoiler__inside-value">5 040 руб. (420 руб./м²)</span>
+              </li>
+              <li class="spoiler__row">
+                <span class="spoiler__inside-name">Дизайн-проект — Спальня 20 м²</span>
+                <span class="spoiler__inside-value">8 400 руб. (420 руб./м²)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="spoiler">
+            <input class="spoiler__toggle-input" type="checkbox" id="spoiler2">
+            <div class="spoiler__outer-content">
+              <label class="spoiler__toggle-label" aria-hidden="true" for="spoiler2"></label>
+              <span class="spoiler__name">Стоимость товаров (всей квартиры)</span>
+              <span class="spoiler__value">2 052 760 руб. (68 шт)</span>
+            </div>
+            <ul class="spoiler__inside-content">
+              <li class="spoiler__row">
+                <details class="product-spoiler spoiler__product-spoiler">
+                  <summary class="product-spoiler__outer-content">
+                    <span class="product-spoiler__name">Товары — Гостиная 32 м²</span>
+                    <span class="product-spoiler__value">788 560 руб. (17 шт)</span>
+                  </summary>
+                  data1
+                </details>
+              </li>
+              <li class="spoiler__row">
+
+                <details class="product-spoiler spoiler__product-spoiler">
+                  <summary class="product-spoiler__outer-content">
+                    <span class="product-spoiler__name">Товары — Детская 12 м²</span>
+                    <span class="product-spoiler__value">688 000 руб. (29 шт)</span>
+                  </summary>
+                  <div class="product-spoiler__inside-content">
+                    <div class="product-spoiler__inside-item">
+                      <img src="imgs/main/bed.png" alt="Кровать Мали" class="product-spoiler__img">
+                      <div class="product-spoiler__text">
+                        <span class="product-spoiler__title">Кровать Мали</span>
+                        <p class="product-spoiler__description">
+                          Два основания, изготовленных  из ДСП толщиной 16 мм/ с брусками хвойных пород и оббитых синтепоном и мебельной тканью.  Основания соединяются между собой болтами...
+                        </p>
+                      </div>
+                      <div class="product-spoiler__price-block">
+                        <span class="product-spoiler__item-price product-spoiler__item-price">
+                          280 000 руб
+                          <span class="product-spoiler__price-caption"> / шт</span>
+                        </span>
+                        <button class="product-spoiler__cart-button">в корзину</button>
+                        <button class="product-spoiler__favourite-button">в избранное</button>
+                      </div>
+                    </div>
+                    <div class="product-spoiler__inside-item">
+                      <img src="imgs/main/bed.png" alt="Кровать Мали" class="product-spoiler__img">
+                      <div class="product-spoiler__text">
+                        <span class="product-spoiler__title">Кровать Мали</span>
+                        <p class="product-spoiler__description">
+                          Два основания, изготовленных  из ДСП толщиной 16 мм/ с брусками хвойных пород и оббитых синтепоном и мебельной тканью.  Основания соединяются между собой болтами...
+                        </p>
+                      </div>
+                      <div class="product-spoiler__price-block">
+                        <span class="product-spoiler__item-price product-spoiler__item-price">
+                          280 000 руб
+                          <span class="product-spoiler__price-caption"> / шт</span>
+                        </span>
+                        <button class="product-spoiler__cart-button">в корзину</button>
+                        <button class="product-spoiler__favourite-button">в избранное</button>
+                      </div>
+                    </div>
+                    <div class="product-spoiler__inside-item">
+                      <img src="imgs/main/bed.png" alt="Кровать Мали" class="product-spoiler__img">
+                      <div class="product-spoiler__text">
+                        <span class="product-spoiler__title">Кровать Мали</span>
+                        <p class="product-spoiler__description">
+                          Два основания, изготовленных  из ДСП толщиной 16 мм/ с брусками хвойных пород и оббитых синтепоном и мебельной тканью.  Основания соединяются между собой болтами...
+                        </p>
+                      </div>
+                      <div class="product-spoiler__price-block">
+                        <span class="product-spoiler__item-price product-spoiler__item-price">
+                          280 000 руб
+                          <span class="product-spoiler__price-caption"> / шт</span>
+                        </span>
+                        <button class="product-spoiler__cart-button">в корзину</button>
+                        <button class="product-spoiler__favourite-button">в избранное</button>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+
+              </li>
+              <li class="spoiler__row">
+                <details class="product-spoiler spoiler__product-spoiler">
+                  <summary class="product-spoiler__outer-content">
+                    <span class="product-spoiler__name">Товары — Спальня 20 м²</span>
+                    <span class="product-spoiler__value">576 200 руб. (22 шт)</span>
+                  </summary>
+                  data3
+                </details>
+              </li>
+            </ul>
+          </div>
+          <div class="spoiler">
+            <input class="spoiler__toggle-input" type="checkbox" id="spoiler3">
+            <div class="spoiler__outer-content">
+              <label class="spoiler__toggle-label" aria-hidden="true" for="spoiler3"></label>
+              <span class="spoiler__name">Стоимость услуг (всей квартиры)</span>
+              <span class="spoiler__value">1 237 800 руб. (22шт)</span>
+            </div>
+            <ul class="spoiler__inside-content">
+              <li class="spoiler__row">
+                <span class="spoiler__inside-name">Услуги — Гостиная 32 м²</span>
+                <span class="spoiler__inside-value">380 000 руб. (4 шт)</span>
+              </li>
+              <li class="spoiler__row">
+                <span class="spoiler__inside-name">Услуги — Гостиная 12 м²</span>
+                <span class="spoiler__inside-value">200 000 руб. (10 шт)</span>
+              </li>
+              <li class="spoiler__row">
+                <span class="spoiler__inside-name">Услуги — Гостиная 20 м²</span>
+                <span class="spoiler__inside-value">657 800 руб. (14 шт)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="container container--large footer__container">
+        <div class="requisites">
+          <a href="/">
+            <img src="imgs/footer/footerLogo.svg" alt="Дольщик Онлайн лого" class="requisites__company-name">
+          </a>
+          <span class="requisites__phone">8 800 147 56 38</span>
+          <div class="requisites__email">hello@dolshik.online</div>
+          <div class="requisites__entity">ООО «Дольщик онлайн» <br> 2543158273</div>
+          <div class="requisites__years">2020 — 2021</div>
+        </div>
+        <div class="footer__secondary-content">
+          <nav class="footer__links">
+            <ul class="main-nav main-nav--footer">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Недвижимость</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Маркетплейс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Услуги&nbsp;и специалисты</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Ипотека&nbsp;и кредит</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Застройщики</a>
+              </li>
+            </ul>
+            <ul class="categories-nav">
+              <li class="categories-nav__column">
+                <span class="categories-nav__column-title">Недвижимость</span>
+                <a href="#" class="categories-nav__link">Подбор недвижимости</a>
+                <a href="#" class="categories-nav__link">Трейд ин</a>
+                <a href="#" class="categories-nav__link">Эл. регистрация</a>
+              </li>
+              <li class="categories-nav__column">
+                <span class="categories-nav__column-title">Финансовые услуги</span>
+                <a href="#" class="categories-nav__link">Ипотека</a>
+                <a href="#" class="categories-nav__link">Потребительский кредит</a>
+                <a href="#" class="categories-nav__link">Страхование</a>
+              </li>
+              <li class="categories-nav__column">
+                <span class="categories-nav__column-title">ИТ решения</span>
+                <a href="#" class="categories-nav__link">«Шахматка»</a>
+                <a href="#" class="categories-nav__link">CRM</a>
+                <a href="#" class="categories-nav__link">Онлайн-бронирование</a>
+              </li>
+              <li class="categories-nav__column">
+                <span class="categories-nav__column-title">Электронные сервисы</span>
+                <a href="#" class="categories-nav__link">Электронная цифровая подпись (ЭЦП)</a>
+                <a href="#" class="categories-nav__link">Электронный документооборот (ЭДО)</a>
+                <a href="#" class="categories-nav__link">Запросы в Росреестр</a>
+              </li>
+              <li class="categories-nav__column">
+                <span class="categories-nav__column-title">Сотрудничество</span>
+                <a href="#" class="categories-nav__link">Для застройщиков</a>
+                <a href="#" class="categories-nav__link">Для поставщиков</a>
+                <a href="#" class="categories-nav__link">Для подрядчиков</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="footer__about">
+            <p class="footer__about-text">
+              <mark class="footer__text-mark">Дольщик.онлайн</mark> — база данных о недвижимости. Использование сайта означает согласие с Пользовательским соглашением и Политикой конфиденциальности. Оплачивая лицензионный платеж, вы принимаете Лицензионное соглашение.
+            </p>
+            <p class="footer__about-text footer__about-text--middle">
+              В базе Дольщик.онлайн вы найдёте предложения по аренде и продаже недвижимости в Владивостоке. Все представленные на сайте объекты проверены профессиональными модераторами. Для удобства вы можете загрузить мобильное приложение на iPhone 
+              и Android, а также удобно находить предложения благодаря хорошо структурированному каталогу и форме поиска на нашем сайте. Для облегчения поиска мы реализовали систему рекомендаций похожих объявлений. Все объявления, которые Вас заинтересовали, легко найти в личном кабинете с помощью добавления в "Избранное".
+            </p>
+            <p class="footer__about-text">
+              <mark class="footer__text-mark">Проверенное жильё в Владивостоке находится на Дольщик.онлайн.</mark>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
