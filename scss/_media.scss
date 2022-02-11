@@ -96,10 +96,6 @@
       margin: 0;
       padding: 24px 0;
     }
-    &__mobile {
-      display: flex;
-      flex-direction: column;
-    }
     &__burger {
       display: flex;
       flex-direction: column;
@@ -174,6 +170,28 @@
 }
 
 @media (max-width: 450px) {
+  .slider {
+    &__row {
+      margin-top: 20px;
+    }
+    &__miniature {
+      height: 120px;
+      width: 120px;
+    }
+  }
+  .header__mobile {
+    .social-nav {
+      &__item {
+        margin-top: 18px;
+        flex-grow: 1;
+        &--phone {
+          margin-top: 0;
+          text-align: center;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
   .price-block {
     &__first-line,
     &__bottom-functions,
