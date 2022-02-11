@@ -165,11 +165,8 @@ body {
 }
 
 .header__burger--active .header__burger-line--second {
-  visibility: hidden;
+  opacity: 0;
   background-color: #3d54c8;
-  -webkit-transform: translateX(250%);
-      -ms-transform: translateX(250%);
-          transform: translateX(250%);
 }
 
 .header__burger-line {
@@ -179,7 +176,6 @@ body {
   width: 100%;
   height: 2px;
   background-color: #3d54c8;
-  position: relative;
 }
 
 .header__mobile {
@@ -201,12 +197,9 @@ body {
 }
 
 .header__mobile--active {
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in;
-       -o-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
+  -webkit-transition-duration: 0.25s;
+       -o-transition-duration: 0.25s;
+          transition-duration: 0.25s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0%);

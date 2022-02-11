@@ -49,7 +49,6 @@ body {
     z-index: 10;
 
     &--active {
-
       #{$block}__burger-line {
         background-color: black;
 
@@ -62,9 +61,8 @@ body {
         }
 
         &--second {
-          visibility: hidden;
+          opacity: 0;
           background-color: #3d54c8;
-          transform: translateX(250%);
         }
       }
     }
@@ -75,7 +73,6 @@ body {
     width: 100%;
     height: 2px;
     background-color: #3d54c8;
-    position: relative;
   }
 
   &__mobile {
@@ -94,8 +91,7 @@ body {
     z-index: 9;
 
     &--active {
-      transition-duration: 0.2s;
-      transition-timing-function: ease-in;
+      transition-duration: 0.25s;
       opacity: 1;
       visibility: visible;
       transform: translateY(0%);
